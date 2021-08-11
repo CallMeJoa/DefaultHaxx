@@ -1,0 +1,95 @@
+-- defaulthaxx
+-- Instances:
+
+local DefaultGUI = Instance.new("ScreenGui")
+local fat = Instance.new("Frame")
+local DefaultHaxx = Instance.new("TextLabel")
+local InfiniteYield = Instance.new("TextButton")
+local LongLegs = Instance.new("TextButton")
+local ChatSpy = Instance.new("TextButton")
+local Credits = Instance.new("TextLabel")
+
+--Properties:
+
+DefaultGUI.Name = "DefaultGUI"
+DefaultGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+DefaultGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+DefaultGUI.ResetOnSpawn = false
+
+fat.Name = "fat"
+fat.Parent = DefaultGUI
+fat.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+fat.BorderSizePixel = 0
+fat.Position = UDim2.new(0.420177281, 0, 0.300365269, 0)
+fat.Size = UDim2.new(0, 482, 0, 118)
+fat.Active = true
+fat.Draggable = true
+
+DefaultHaxx.Name = "DefaultHaxx"
+DefaultHaxx.Parent = fat
+DefaultHaxx.BackgroundColor3 = Color3.fromRGB(251, 167, 27)
+DefaultHaxx.BorderSizePixel = 0
+DefaultHaxx.Size = UDim2.new(0, 482, 0, 28)
+DefaultHaxx.Font = Enum.Font.SourceSansLight
+DefaultHaxx.Text = "Default Haxx"
+DefaultHaxx.TextColor3 = Color3.fromRGB(255, 255, 255)
+DefaultHaxx.TextScaled = true
+DefaultHaxx.TextSize = 14.000
+DefaultHaxx.TextWrapped = true
+
+InfiniteYield.Name = "InfiniteYield"
+InfiniteYield.Parent = fat
+InfiniteYield.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
+InfiniteYield.BorderSizePixel = 0
+InfiniteYield.Position = UDim2.new(0.0329999998, 0, 0.565999985, 0)
+InfiniteYield.Size = UDim2.new(0, 120, 0, 33)
+InfiniteYield.Font = Enum.Font.SourceSansLight
+InfiniteYield.Text = "Infinite Yield"
+InfiniteYield.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfiniteYield.TextSize = 20.000
+InfiniteYield.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+LongLegs.Name = "LongLegs"
+LongLegs.Parent = fat
+LongLegs.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
+LongLegs.BorderSizePixel = 0
+LongLegs.Position = UDim2.new(0.0329999998, 333, 0.565999985, 0)
+LongLegs.Size = UDim2.new(0, 120, 0, 33)
+LongLegs.Font = Enum.Font.SourceSansLight
+LongLegs.Text = "Long Legs"
+LongLegs.TextColor3 = Color3.fromRGB(255, 255, 255)
+LongLegs.TextSize = 20.000
+LongLegs.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/CallMeJoa/LongLegs/main/README.md'))()
+end)
+
+ChatSpy.Name = "ChatSpy"
+ChatSpy.Parent = fat
+ChatSpy.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
+ChatSpy.BorderSizePixel = 0
+ChatSpy.Position = UDim2.new(0.0329999998, 166, 0.565999985, 0)
+ChatSpy.Size = UDim2.new(0, 120, 0, 33)
+ChatSpy.Font = Enum.Font.SourceSansLight
+ChatSpy.Text = "ChatSpy"
+ChatSpy.TextColor3 = Color3.fromRGB(255, 255, 255)
+ChatSpy.TextSize = 20.000
+ChatSpy.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/CallMeJoa/LongLegs/main/chatspy'))()
+end)
+
+Credits.Name = "Credits"
+Credits.Parent = fat
+Credits.BackgroundColor3 = Color3.fromRGB(251, 167, 27)
+Credits.BackgroundTransparency = 1.000
+Credits.BorderSizePixel = 0
+Credits.Position = UDim2.new(0, 0, 0.237288132, 0)
+Credits.Size = UDim2.new(0, 482, 0, 28)
+Credits.Font = Enum.Font.SourceSansLight
+Credits.Text = "astaghfirullah#1813"
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextScaled = true
+Credits.TextSize = 14.000
+Credits.TextTransparency = 0.600
+Credits.TextWrapped = true
